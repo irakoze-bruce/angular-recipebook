@@ -1,3 +1,5 @@
+import { RecipesDetailComponent } from './recipes/recipes-detail/recipes-detail.component';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { RecipesComponent } from './recipes/recipes.component';
 
@@ -8,7 +10,11 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
 
-{path:"" ,component: RecipesComponent},
+ {path:"",redirectTo:'/recipes', pathMatch:"full"},
+{path:"recipes" ,component: RecipesComponent, children:[
+  {path:"",component:RecipeStartComponent},
+  {path:":id",component:RecipesDetailComponent}
+]},
 {path:"shoppingList",component:ShoppingListComponent}
 ];
 

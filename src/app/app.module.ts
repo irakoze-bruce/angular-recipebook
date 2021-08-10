@@ -13,6 +13,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 
 
@@ -27,7 +28,7 @@ import { DropdownDirective } from './shared/dropdown.directive';
     ShoppingListComponent,
     RecipesItemComponent,
     ShoppingEditComponent, 
-    DropdownDirective
+    DropdownDirective, RecipeStartComponent
   ],
   imports: [
     BrowserModule,
