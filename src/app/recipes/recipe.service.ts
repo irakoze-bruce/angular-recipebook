@@ -30,8 +30,11 @@ export class RecipeService{
   constructor(private shlService:ShoppingListService){}
 
   getRecipes(){
+return this.recipes.slice()
+  }
 
-    return this.recipes.slice()
+  getRecipe(index:number){
+    return this.recipes.slice()[index]
   }
 
   addIngredientToChoppingList(ingredients:Ingredient[]){

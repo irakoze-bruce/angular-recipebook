@@ -14,6 +14,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { AppRoutingModule } from './app-routing.module';
 import { DropdownDirective } from './shared/dropdown.directive';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 
 
@@ -28,7 +29,7 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
     ShoppingListComponent,
     RecipesItemComponent,
     ShoppingEditComponent, 
-    DropdownDirective, RecipeStartComponent
+    DropdownDirective, RecipeStartComponent, RecipeEditComponent
   ],
   imports: [
     BrowserModule,
